@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Set.css" />
+    <link rel="icon" href="logo.png">
+    <title>Set Your Goal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          
+            <h2 class="title">Set Your Goal</h2>
+            <p>
+              Set the water content and start tracking your goal!
+            </p>
+            <div>
+            
+              <p>Water(ml): <span id="demo"></span></p>
+              <div class="slidecontainer">
+                <input type="range" min="2500" max="4000" value="2500" class="slider" id="myRange">
+                
+              </div>
+            </div>
+            
+            
+
+          <button class="btn solid" type="submit" onclick="passValue()">Track!</button>
+        
+            
+         
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Don't Know Your Goal?</h3>
+            <p>
+              Enter your weight and age. We will set your goal for you!
+            </p>
+            <a href="Know.html">
+                <button class="btn transparent" id="sign-up-btn">
+                    Figure Out!
+                  </button>
+
+            </a>
+          </div>
+          <img src="Images/register.svg" class="image" alt="" />
+        </div>
+
+      </div>
+      
+    </div>
+
+   
+  </body>
+</html>
+<script>
+  var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+function passValue() {
+  var slider = document.getElementById("myRange");
+  var value = slider.value;
+  var form = document.createElement("form");
+  form.setAttribute("method", "post");
+  form.setAttribute("action", "Interface_b.html");
+  var input = document.createElement("input");
+  input.setAttribute("type", "hidden");
+  input.setAttribute("name", "sliderValue");
+  input.setAttribute("value", value);
+  form.appendChild(input);
+  document.body.appendChild(form);
+  form.submit();
+}
+
+slider.addEventListener("input", function() {
+    localStorage.setItem("sliderValue", slider.value);
+  });
+
+</script>
+
+

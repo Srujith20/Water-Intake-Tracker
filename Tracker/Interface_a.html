@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interface A - Water Intake Tracker</title>
+	<link rel="stylesheet" type="text/css" href="Interface_a.css">
+  <link rel="icon" href="logo.png">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Water Intake Tracker</h1>
+		<nav>
+			<ul>
+				<li><a href="Introduction.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+	<section class="main-section">
+		<div class="tracker">
+
+            <div>
+                <h3 >Water Intake Goal:</h3>
+                <div style="border: 1px solid black; padding: 5px; margin-bottom: 10px;">
+                  Amount(ml): <span id="demo"></span></p>
+                  
+                </div>
+                <div style="border: 1px solid black; padding: 5px;">
+                 Amount in each glass(ml): <span id="demo_1"></span></p>
+                  
+                </div>
+            </div>
+			
+            <div>
+            <div class="glasses">
+                <img id ="image1" src="Images/emptyglass.png" alt="Image 1">
+                <img id ="image2" src="Images/emptyglass.png" alt="Image 2">
+                <img id ="image3" src="Images/emptyglass.png" alt="Image 3">
+                <img id ="image4" src="Images/emptyglass.png" alt="Image 4">
+                <img id ="image5" src="Images/emptyglass.png" alt="Image 5">
+            </div>
+            <div>
+                
+                <input type="range" min="0" max="5" value="0" class="slider" oninput="this.style.setProperty('--percentage', this.value*20 );" id="ran" >
+                
+            </div>
+            
+        </div>
+            
+			
+			
+		</div>
+	</section>
+</main>
+	
+	
+	
+</body>
+
+</html>
+
+<script>
+    const slider = document.getElementById('ran');
+const image1 = document.getElementById('image1');
+const image2 = document.getElementById('image2');
+const image3 = document.getElementById('image3');
+const image4 = document.getElementById('image4');
+const image5 = document.getElementById('image5');
+
+
+slider.addEventListener('input', () => {
+  const value = slider.value;
+  if(value==1)
+  {
+    image1.src = 1 + '.png';
+  }
+  else if(value==2)
+  {
+    image1.src = 1 + '.png';
+    image2.src = 1 + '.png';
+  }
+  else if(value==3)
+  {
+    image1.src = 1 + '.png';
+    image2.src = 1 + '.png';
+    image3.src = 1 + '.png';
+  }
+  else if(value==4)
+  {
+    image1.src = 1 + '.png';
+    image2.src = 1 + '.png';
+    image3.src = 1 + '.png';
+    image4.src = 1 + '.png';
+    
+  }
+  else if(value==5)
+  {
+    image1.src = 1 + '.png';
+    image2.src = 1 + '.png';
+    image3.src = 1 + '.png';
+    image4.src = 1 + '.png';
+    image5.src = 1 + '.png';
+
+    window.location.href="Thankyou.html"
+  }
+  
+});
+
+var sliderValue = localStorage.getItem("sliderValue");
+var output = document.getElementById("demo");
+
+if(sliderValue<=100){
+if(sliderValue<25)
+{
+	var val = 3400
+}
+else if(sliderValue>=25 && sliderValue<=35)
+{
+var val=(120*sliderValue)+700
+}
+else{
+	var val=2500
+}
+}
+else{
+	var val=sliderValue;
+}
+
+output.innerHTML = val;
+var out = document.getElementById("demo_1");
+out.innerHTML = val/5;
+
+
+
+
+
+
+</script>
