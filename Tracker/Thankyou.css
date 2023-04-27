@@ -58,13 +58,6 @@ a:hover {
 	padding: 2rem;
 }
 
-.tracker {
-	border: 1px solid #ccc;
-	padding: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
 .btn{
 
 	background-color: #5CE1EF;
