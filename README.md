@@ -77,6 +77,12 @@ Make the required changes to suit the website to your needs!
 **Thank You**
 <img width="1440" alt="Screenshot 2023-04-27 at 12 30 38 AM" src="https://user-images.githubusercontent.com/66065988/234759710-b12b7670-cd70-46c6-aa25-e1d4f44f5a15.png">
 
+### References
+Screen Strucutre: https://github.com/Kirti-salunkhe/pistachio
+
+Slider: https://www.w3schools.com/howto/howto_js_rangeslider.asp
+
+
 
 
 
