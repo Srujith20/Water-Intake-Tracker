@@ -39,10 +39,10 @@ Follow the steps and make the changes in both the files above:
 
 Computer, Visual Studio Code
 
-### Downloads:
+### Downloads
 Download the Visual Studio Code(Select the version that matches with your system): https://code.visualstudio.com/download
 
-### Knowledge Required:
+### Knowledge Required
 HTML, CSS, JavaScript
 
 ### Package Contents
