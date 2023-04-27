@@ -2,7 +2,7 @@
 A website that tracks water intake. A user can set or find his/her goal and then track it to stay healthy!
 
 ## **Developers**
-Anna Rudek(_arudek@ufle.edu_)
+Anna Rudek(_arudek@ufl.edu_)
 
 Nathan Jones(_njones2@ufl.edu_)
 
