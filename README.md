@@ -16,11 +16,11 @@ Computer/Laptop(Preferably 13inch), Chrome Browser
 ### Installation
 1. Download the package on the system.
 2. Unzip the package
-3. Open the "Introduction.html" file with Chrome Browser.
-4. Follow the instruction on the website to start using the website.
+3. Open the "Introduction.html" file with Chrome Browser
+4. Follow the instruction on the website to start using the website
 
 ### Switch between Applications
-The package redirects to **Application A**(shown in DEMO below) by defaut.
+The package redirects to **Application A**(shown in DEMO below) by defaut
 
 Changes need to be made to the following two files to use **Application B**
 1. Set.html
