@@ -11,12 +11,13 @@ header {
 	background-image: url("Images/n.png");
     background-size:  80% 100%;
     background-repeat: no-repeat;
-	color: white;
-	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	padding: 1rem;
+	color: white;
+	display: flex;
+	
 }
 
 
@@ -59,19 +60,6 @@ a:hover {
     flex-direction: column;
 }
 
-
-
-label {
-	margin-bottom: 0.5rem;
-}
-
-input {
-	margin-bottom: 1rem;
-	padding: 0.5rem;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-}
-
 button {
 	padding: 0.5rem 1rem;
 	background-color: #42a5f5;
@@ -104,15 +92,10 @@ button:hover {
 }
 
 
-
-
-
-
-
 .centered
 {
     position: absolute;
-    top: 60%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
