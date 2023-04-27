@@ -3,18 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
+ 
     <link rel="stylesheet" href="Set.css" />
     <link rel="icon" href="logo.png">
     <title>Set Your Goal</title>
   </head>
   <body>
     <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
+   
+        <div class="main-form">
           
             <h2 class="title">Set Your Goal</h2>
             <p>
@@ -35,11 +32,11 @@
         
             
          
-        </div>
+    
       </div>
 
-      <div class="panels-container">
-        <div class="panel left-panel">
+      <div class="holder-container">
+        <div class="holder left-holder">
           <div class="content">
             <h3>Don't Know Your Goal?</h3>
             <p>
@@ -62,6 +59,8 @@
    
   </body>
 </html>
+
+
 <script>
   var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
@@ -76,7 +75,7 @@ function passValue() {
   var value = slider.value;
   var form = document.createElement("form");
   form.setAttribute("method", "post");
-  form.setAttribute("action", "Interface_b.html");
+  form.setAttribute("action", "Interface_a.html");
   var input = document.createElement("input");
   input.setAttribute("type", "hidden");
   input.setAttribute("name", "sliderValue");
